@@ -27,7 +27,7 @@ class Formulario extends React.Component{
         
              </div>
 
-            <Botao/>
+            <Botao texto="adicionar" />
 
             </form>
         )
