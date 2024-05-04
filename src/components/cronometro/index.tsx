@@ -1,14 +1,15 @@
 
 import Botao from '../Botao'
 import Relogio  from './Relogio'
+import style from './Cronometro.module.scss'
 
 export default function Cronometro(){
     return(
-    <div>
-        <p>
+    <div className={style.cronometro}>
+        <p className={style.titulo}>
             EScreve um card e inicie o cronometro 
         </p>
-    <div>
+    <div className={style.relogioWrapper}>
      <Relogio/>
     </div>
 
