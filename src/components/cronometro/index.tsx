@@ -1,18 +1,19 @@
 
-import Botao from '../Botao/index'
-import Button from '../Botao/index'
+import Botao from '../Botao'
+import Relogio  from './Relogio'
 
 export default function Cronometro(){
+    return(
     <div>
         <p>
             EScreve um card e inicie o cronometro 
         </p>
     <div>
-    <Botao>
-    começar
-    </Botao>
-
+     <Relogio/>
     </div>
 
+    <Botao texto='Começar'/>
+
     </div>
+    )
 }
