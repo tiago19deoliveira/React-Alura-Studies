@@ -13,7 +13,7 @@ export default function Cronometro(){
      <Relogio/>
     </div>
 
-    <Botao texto='Começar'/>
+    <Botao type='submit'>Começar</Botao>
 
     </div>
     )
