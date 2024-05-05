@@ -1,5 +1,5 @@
 import { ITarefa } from '../../../types/tarefa'
-import style from '../lista.module.scss'
+import style from './item.module.scss'
 
 interface Props extends ITarefa{
     selecionaTarefa:(tarefaSelecionada: ITarefa)=> void
@@ -13,8 +13,7 @@ export default function Item (
     completado,
     id,
     selecionaTarefa}: Props) {
-    console.log("item atual:",{ tarefa,tempo,selecionado,completado,id} )
-
+    
     return(
 
         <li 
