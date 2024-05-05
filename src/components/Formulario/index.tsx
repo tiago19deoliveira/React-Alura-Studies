@@ -13,11 +13,23 @@ state={
 
 adicionarTarefa(evento : React.FormEvent<HTMLFormElement>){
     evento.preventDefault()
-    const novaTarefa: ITarefa = {
-        tempo: this.state.tempo,
-        tarefa: this.state.tarefa
-    };
-    this.props.setTarefas(tarefasAntigas => [...tarefasAntigas, novaTarefa]);
+    this.props.setTarefas(tarefasAntigas =>
+         [
+            ...tarefasAntigas,
+            {...this.state,
+            selecionado:false,
+            completo: false
+            }
+        ]
+        
+    );
+
+    this.setState(
+        {
+            tarefa: "",
+            tempo:"00:00"
+        }
+    )
 }
 
    
